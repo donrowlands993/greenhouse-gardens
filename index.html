@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenhouse Gardens | Local Garden Center in St Clair Shores, MI</title>
     <meta name="description" content="Locally grown plants, fresh vegetables, and expert gardening advice in St Clair Shores, MI. Visit Greenhouse Gardens for affordable, high-quality plants.">
-    <meta name="keywords" content="Garden center St Clair Shores, Local nursery Michigan, Buy plants near me, Flowers and vegetables St Clair Shores, Affordable garden plants">
     
-    <!-- Google Fonts: Inter for clean readability, Playfair Display for organic headings -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
@@ -58,7 +57,12 @@
         .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; color: var(--primary-green); }
         
         /* HERO SECTION */
-        .hero { position: relative; background: linear-gradient(rgba(27, 67, 50, 0.6), rgba(27, 67, 50, 0.6)), url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover; height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white); }
+        .hero { 
+            position: relative; 
+            /* UPDATED HERO IMAGE */
+            background: linear-gradient(rgba(27, 67, 50, 0.6), rgba(27, 67, 50, 0.6)), url('https://images.unsplash.com/photo-1585320806297-9794b3e4ce11?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover; 
+            height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white); 
+        }
         .hero-content { max-width: 800px; padding: 0 20px; }
         .hero h1 { color: var(--white); font-size: 3.5rem; margin-bottom: 1rem; }
         .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
@@ -124,7 +128,6 @@
             <ul class="nav-links" id="nav-links">
                 <li><a href="#shop">Our Plants</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#tips">Gardening Tips</a></li>
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#contact">Visit Us</a></li>
                 <li><a href="tel:5868595000" class="btn btn-primary" style="padding: 0.5rem 1rem;"><i class="fas fa-phone"></i> (586) 859-5000</a></li>
@@ -177,28 +180,32 @@
         
         <div class="categories-grid">
             <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Flowers & Annuals">
+                <!-- UPDATED IMAGE -->
+                <img src="https://images.unsplash.com/photo-1460533893735-45cea2212645?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Flowers & Annuals">
                 <div class="category-info">
                     <h3>Flowers & Annuals</h3>
                     <p>Brighten your yard with our vibrant, locally-grown blooms.</p>
                 </div>
             </div>
             <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1595858602621-0a133400a4fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fresh Vegetables">
+                <!-- UPDATED IMAGE -->
+                <img src="https://images.unsplash.com/photo-1563514227147-3850cb9f3f4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fresh Vegetables">
                 <div class="category-info">
                     <h3>Fresh Vegetables</h3>
                     <p>Start your edible garden with our hardy vegetable starters.</p>
                 </div>
             </div>
             <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1592329832791-72f3e828d57d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Herbs & Edibles">
+                <!-- UPDATED IMAGE -->
+                <img src="https://images.unsplash.com/photo-1508492040984-7501b897b69c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Herbs & Edibles">
                 <div class="category-info">
                     <h3>Herbs & Edibles</h3>
                     <p>Perfect for container gardening and culinary enthusiasts.</p>
                 </div>
             </div>
             <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hanging Baskets">
+                <!-- UPDATED IMAGE -->
+                <img src="https://images.unsplash.com/photo-1555037015-1498966bcd7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hanging Baskets">
                 <div class="category-info">
                     <h3>Hanging Baskets</h3>
                     <p>Lush, pre-arranged baskets ready to hang on your porch.</p>
@@ -211,7 +218,8 @@
     <section id="about" style="background-color: var(--white); padding: 4rem 0;">
         <div class="container about-grid">
             <div>
-                <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4ce11?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Greenhouse staff helping a customer" class="about-img">
+                <!-- UPDATED IMAGE -->
+                <img src="https://images.unsplash.com/photo-1530836369250-ef71a3a5e003?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Greenhouse staff working with plants" class="about-img">
             </div>
             <div>
                 <h2>Your Local Gardening Hub</h2>
@@ -284,7 +292,6 @@
             </div>
             
             <div class="map-container">
-                <!-- Google Maps iFrame for St Clair Shores Address -->
                 <iframe src="https://maps.google.com/maps?q=21807%20Greater%20Mack%20Ave,%20St%20Clair%20Shores,%20MI&t=&z=14&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
@@ -308,7 +315,6 @@
             navLinks.classList.toggle('active');
         });
 
-        // Close menu when a link is clicked
         const links = document.querySelectorAll('.nav-links a');
         links.forEach(link => {
             link.addEventListener('click', () => {
@@ -316,51 +322,5 @@
             });
         });
     </script>
-
-    <!-- Local Business SEO Schema Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "GardenCenter",
-      "name": "Greenhouse Gardens",
-      "image": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735",
-      "@id": "",
-      "url": "http://www.greenhousegardens-stclairshores.com",
-      "telephone": "(586) 859-5000",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "21807 Greater Mack Ave",
-        "addressLocality": "St Clair Shores",
-        "addressRegion": "MI",
-        "postalCode": "48080",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 42.4760,
-        "longitude": -82.8870
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek":[
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "09:00",
-        "closes": "17:00"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "125"
-      }
-    }
-    </script>
-
 </body>
 </html>
