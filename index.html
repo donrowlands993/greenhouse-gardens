@@ -33,7 +33,6 @@
         body { font-family: var(--font-body); color: var(--dark-text); background-color: var(--light-bg); line-height: 1.6; }
         h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--primary-green); margin-bottom: 1rem; }
         a { text-decoration: none; color: inherit; }
-        img { max-width: 100%; height: auto; display: block; }
         
         /* UTILITIES */
         .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 4rem 0; }
@@ -56,16 +55,14 @@
         .nav-links a:hover { color: var(--earth-tone); }
         .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; color: var(--primary-green); }
         
-        /* HERO SECTION */
+        /* HERO SECTION (Now a clean gradient instead of an image) */
         .hero { 
-            position: relative; 
-            /* UPDATED HERO IMAGE */
-            background: linear-gradient(rgba(27, 67, 50, 0.6), rgba(27, 67, 50, 0.6)), url('https://images.unsplash.com/photo-1585320806297-9794b3e4ce11?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover; 
-            height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white); 
+            background: linear-gradient(135deg, #1b4332, #2d6a4f); 
+            height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white); 
         }
         .hero-content { max-width: 800px; padding: 0 20px; }
-        .hero h1 { color: var(--white); font-size: 3.5rem; margin-bottom: 1rem; }
-        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+        .hero h1 { color: var(--light-green); font-size: 3.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; color: #e9ecef; }
         .hero-btns { display: flex; gap: 1rem; justify-content: center; }
 
         /* WHY CHOOSE US */
@@ -74,16 +71,16 @@
         .feature-card i { font-size: 2.5rem; color: var(--primary-green); margin-bottom: 1rem; }
         .feature-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
 
-        /* SHOP / CATEGORIES */
+        /* SHOP / CATEGORIES (Images replaced with Icons) */
         .categories-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
-        .category-card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .category-card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border-top: 5px solid var(--earth-tone); }
         .category-card:hover { transform: translateY(-5px); }
-        .category-card img { width: 100%; height: 200px; object-fit: cover; }
-        .category-info { padding: 1.5rem; text-align: center; }
+        .category-info { padding: 3rem 1.5rem; text-align: center; }
+        .category-info i { font-size: 3rem; color: var(--primary-green); margin-bottom: 1.5rem; }
 
-        /* ABOUT SECTION */
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-        .about-img { border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        /* ABOUT SECTION (Centered, image removed) */
+        .about-section { background-color: var(--white); padding: 4rem 0; text-align: center; }
+        .about-content { max-width: 800px; margin: 0 auto; }
         
         /* REVIEWS / TESTIMONIALS */
         .reviews { background-color: var(--primary-green); color: var(--white); }
@@ -109,7 +106,7 @@
             .menu-toggle { display: block; }
             .hero h1 { font-size: 2.5rem; }
             .hero-btns { flex-direction: column; }
-            .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
         }
     </style>
 </head>
@@ -180,33 +177,29 @@
         
         <div class="categories-grid">
             <div class="category-card">
-                <!-- UPDATED IMAGE -->
-                <img src="https://images.unsplash.com/photo-1460533893735-45cea2212645?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Flowers & Annuals">
                 <div class="category-info">
+                    <i class="fas fa-sun"></i>
                     <h3>Flowers & Annuals</h3>
                     <p>Brighten your yard with our vibrant, locally-grown blooms.</p>
                 </div>
             </div>
             <div class="category-card">
-                <!-- UPDATED IMAGE -->
-                <img src="https://images.unsplash.com/photo-1563514227147-3850cb9f3f4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fresh Vegetables">
                 <div class="category-info">
+                    <i class="fas fa-carrot"></i>
                     <h3>Fresh Vegetables</h3>
                     <p>Start your edible garden with our hardy vegetable starters.</p>
                 </div>
             </div>
             <div class="category-card">
-                <!-- UPDATED IMAGE -->
-                <img src="https://images.unsplash.com/photo-1508492040984-7501b897b69c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Herbs & Edibles">
                 <div class="category-info">
+                    <i class="fas fa-mortar-pestle"></i>
                     <h3>Herbs & Edibles</h3>
                     <p>Perfect for container gardening and culinary enthusiasts.</p>
                 </div>
             </div>
             <div class="category-card">
-                <!-- UPDATED IMAGE -->
-                <img src="https://images.unsplash.com/photo-1555037015-1498966bcd7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hanging Baskets">
                 <div class="category-info">
+                    <i class="fas fa-shopping-basket"></i>
                     <h3>Hanging Baskets</h3>
                     <p>Lush, pre-arranged baskets ready to hang on your porch.</p>
                 </div>
@@ -215,18 +208,12 @@
     </section>
 
     <!-- About Us -->
-    <section id="about" style="background-color: var(--white); padding: 4rem 0;">
-        <div class="container about-grid">
-            <div>
-                <!-- UPDATED IMAGE -->
-                <img src="https://images.unsplash.com/photo-1530836369250-ef71a3a5e003?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Greenhouse staff working with plants" class="about-img">
-            </div>
-            <div>
-                <h2>Your Local Gardening Hub</h2>
-                <p style="margin-bottom: 1rem;">At Greenhouse Gardens, we believe that gardening should be accessible, successful, and fun for everyone. As a local St Clair Shores business, we focus on growing plants that thrive specifically in the Michigan climate.</p>
-                <p style="margin-bottom: 1.5rem;">Unlike big box stores, our plants are nurtured locally with care. Plus, our dedicated staff—including our resident plant expert <strong>Brian</strong>—is always on hand to provide personalized gardening advice to ensure your home looks incredible.</p>
-                <a href="#contact" class="btn btn-secondary">Get Directions to Store</a>
-            </div>
+    <section id="about" class="about-section">
+        <div class="container about-content">
+            <h2>Your Local Gardening Hub</h2>
+            <p style="margin-bottom: 1rem;">At Greenhouse Gardens, we believe that gardening should be accessible, successful, and fun for everyone. As a local St Clair Shores business, we focus on growing plants that thrive specifically in the Michigan climate.</p>
+            <p style="margin-bottom: 2rem;">Unlike big box stores, our plants are nurtured locally with care. Plus, our dedicated staff—including our resident plant expert <strong>Brian</strong>—is always on hand to provide personalized gardening advice to ensure your home looks incredible.</p>
+            <a href="#contact" class="btn btn-secondary">Get Directions to Store</a>
         </div>
     </section>
 
